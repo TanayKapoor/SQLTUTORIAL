@@ -70,3 +70,5 @@ CREATE TABLE Orders (
 );
 
 -- CHECK
+ALTER TABLE Persons2
+ADD CHECK (Age>=18);
