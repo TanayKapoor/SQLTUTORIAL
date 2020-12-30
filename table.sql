@@ -13,3 +13,17 @@ CREATE TABLE Persons
 SHOW TABLES;
 
 -- Describe Table
+DESC Persons;
+
+-- Truncate TABLE
+Truncate TABLE Persons;
+
+-- DROP TABLE 
+DROP TABLE Persons;
+
+-- ALTER TABLE 
+ALTER TABLE  Persons
+ADD Email VARCHAR(255);
+
+
+
