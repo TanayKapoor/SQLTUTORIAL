@@ -61,8 +61,8 @@ ALTER TABLE Persons2
 DROP CONSTRAINT Primary_Person(PersonID, LastName);
 
 -- FOREIGN KEY 
-CREATE TABLE Orders (
-    OrderID int NOT NULL,
+CREATE TABLE Orders2 (
+    OrderID int NOT NULL AUTO_INCREMENT ,
     OrderNumber int NOT NULL,
     PersonID int,
     PRIMARY KEY (OrderID),
@@ -72,3 +72,12 @@ CREATE TABLE Orders (
 -- CHECK
 ALTER TABLE Persons2
 ADD CHECK (Age>=18);
+
+-- DEFAULT
+ALTER TABLE Persons2
+ALTER FirstName SET DEFAULT 'SUMIT';
+
+-- INSERT INTO 
+INSERT INTO Persons2 (PersonID, LastName)
+Values 
+(2,'Kumar');
