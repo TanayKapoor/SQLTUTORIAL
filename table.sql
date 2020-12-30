@@ -1,3 +1,4 @@
+-- CREATING TABLE
 CREATE TABLE Persons 
 (
     PersonID INT,
@@ -7,3 +8,8 @@ CREATE TABLE Persons
     City VARCHAR (255)
 
 );
+
+-- Show Table
+SHOW TABLES;
+
+-- Describe Table
